@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audio_cache.dart';
 
 void main() => runApp(XylophoneApp());
+//Run file
 
 class XylophoneApp extends StatelessWidget {
   void PlaySound(int SoundNumber){
@@ -76,6 +77,14 @@ class XylophoneApp extends StatelessWidget {
                 ),
               ),
               Expanded(
+                child: FlatButton(
+                  color: Colors.teal,
+                  onPressed: () {
+                    PlaySound(7);
+                  },
+                  child: Text(''),
+                ),
+                Expanded(
                 child: FlatButton(
                   color: Colors.teal,
                   onPressed: () {
